@@ -1,0 +1,107 @@
+{
+    "jh-head": {
+        "prefix": "jh-head",
+        "body": [
+            "headContent: [",
+            "    { tag: 'jh-page-title', value: \"页面访问日志\", attrs: { cols: 12, sm: 6, md: 4 }, helpBtn: true, slot: [] },",
+            "    { tag: 'v-spacer' },",
+            "    {",
+            "      tag: 'jh-search',",
+            "      value: [",
+            "        { tag: 'v-select', attrs: { vModel: 'logFileSelected', items: 'constantCollection.logFile', prefix: '文件：', hideDetails: true } },",
+            "      ],",
+            "      searchBtn: true",
+            "    }",
+            "  ],"
+        ],
+        "description": "头部内容模板"
+    },
+    "jh-content": {
+        "prefix": "jh-content",
+        "body": [
+            "pageContent: [",
+            "  {",
+            "    tag: \"v-col\",",
+            "    attrs: { cols: 12 },",
+            "    value: [",
+            "      /*html*/ `",
+            "        $1",
+            "        `,",
+            "    ],",
+            "  },",
+            "];"
+        ],
+        "description": "内容模板"
+    },
+    "jh-table": {
+        "prefix": "jh-table",
+        "body": [
+            "{",
+            "      tag: 'jh-table',",
+            "      attrs: {},",
+            "      colAttrs: { clos: 12 },",
+            "      cardAttrs: { class: 'rounded-lg elevation-0' },",
+            "      headActionList: [",
+            "        { tag: 'v-btn', value: '新增', attrs: { small: true, color: 'success', '@click': 'doUiAction(\"startCreateItem\")' } },",
+            "        { tag: 'v-spacer' },",
+            "        {",
+            "          tag: 'v-col',",
+            "          attrs: { cols: '12', sm: '6', md: '2', class: 'pa-0' },",
+            "          value: [",
+            "            { tag: 'v-text-field', attrs: { prefix: '筛选', 'v-model': 'searchInput', class: 'jh-v-input', ':dense': true, ':filled': true, ':single-line': true } },",
+            "          ],",
+            "        }",
+            "      ],",
+            "      value: [",
+            "         /*html*/`",
+            "         `",
+            "      ],",
+            "      rowActionList: [",
+            "      ],",
+            "}"
+        ],
+        "description": "表格组件模板"
+    },
+    "jh-drawer": {
+        "prefix": "jh-drawer",
+        "body": [
+            "{",
+            "    tag: 'jh-drawer',",
+            "    key: \"$1\",",
+            "    attrs: {},",
+            "    title: '$2',",
+            "    headSlot: [",
+            "    { tag: 'v-spacer' }",
+            "    ],",
+            "    contentList: [",
+            "    {",
+            "        \"label\": \"\",",
+            "        \"type\": \"form\",",
+            "        \"formItemList\": [",
+            "            {",
+            "                \"label\": \"初始密码*必填\",",
+            "                \"model\": \"$1.clearTextPassword\",",
+            "                \"tag\": \"v-text-field\",",
+            "                \"attrs\": {},",
+            "                \"rules\": \"validationRules.requireRules\"",
+            "            }",
+            "        ],",
+            "        action: [",
+            "            { tag: 'v-btn', value: '保存', attrs: { small: true, class: 'ml-2', color: 'success', '@click': \"doUiAction('resetPassword')\" } },",
+            "        ]",
+            "    }",
+            "    ]",
+            "}"
+        ],
+        "description": "抽屉组件模板"
+    },
+    "dataExpression": {
+        "prefix": "dataExpression",
+        "body": [
+            "dataExpression: {",
+            "    appInfo: 'window.appInfo',",
+            "},"
+        ],
+        "description": "数据表达式模板"
+    }
+}
