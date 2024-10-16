@@ -3,11 +3,13 @@
   "displayName": "jianghu snippets",
   "description": "jianghu 代码片段，包含代码规范和init-json片段等",
   "version": "0.0.1",
-  "publisher": "jianghu",
+  "publisher": "jianghujs",
   "repository": {
     "type": "git",
     "url": "https://github.com/jianghujs/jianghu-snippets.git"
   },
+  "homepage": "https://github.com/jianghujs/jianghu-snippets/blob/main/README.md",
+	"icon": "images/logo.png",
   "engines": {
     "vscode": "^1.94.0"
   },
