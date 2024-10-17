@@ -270,3 +270,53 @@ dataExpression: {
     appInfo: 'window.appInfo',
 },
 ```
+
+### jh-input
+```js
+{ tag: 'v-text-field', model: 'serverSearchInput.title', attrs: { prefix: '标题：'}}
+```
+
+### jh-select
+```js
+{ tag: 'v-select', model: 'serverSearchWhere.type', attrs: { prefix: '类型', ':items': 'constantObj.types', clearable: true}}
+```
+
+### jh-autocomplete
+```js
+{ tag: 'v-autocomplete', model: 'serverSearchWhere.type', attrs: { prefix: '类型', ':items': 'constantObj.types', clearable: true}}
+```
+
+### jh-checkbox
+```js
+{ tag: 'v-checkbox', model: 'serverSearchWhere.item', attrs: { label: '启用' } }
+```
+
+### jh-radio
+```js
+{ tag: 'v-radio', model: 'serverSearchWhere.item', attrs: { label: '性别' } }
+```
+
+### jh-switch
+```js
+{ tag: 'v-switch', model: 'serverSearchWhere.item', attrs: { label: '启用', 'true-value': '1', 'false-value': '0' } }
+```
+
+### jh-date-picker
+```js
+{ tag: 'v-date-picker', model: 'serverSearchWhere.date', attrs: { prefix: '日期' } },
+```
+
+### jh-file-input
+```js
+{ tag: 'v-file-input', model: 'serverSearchWhere.image', attrs: { accept: 'image/*', label: '图片' } },
+```
+
+### jh-textarea
+```js
+{ tag: 'v-textarea', model: 'serverSearchWhere.description', attrs: { prefix: '描述', rows: '3' } },
+```
+
+### jh-btn
+```js
+{ tag: 'v-btn', value: '保存', attrs: { small: true, color: 'success', '@click': "doUiAction('updateItem')" } },
+```

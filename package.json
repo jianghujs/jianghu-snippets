@@ -2,8 +2,8 @@
   "name": "jianghu-snippets",
   "displayName": "jianghu snippets",
   "description": "jianghu 代码片段，包含代码规范和init-json片段等",
-  "version": "0.0.1",
-  "publisher": "jianghujs",
+  "version": "0.0.2",
+  "publisher": "geekape",
   "repository": {
     "type": "git",
     "url": "https://github.com/jianghujs/jianghu-snippets.git"
